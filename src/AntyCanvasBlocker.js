@@ -1,7 +1,7 @@
 const aCanvasBlocker = () => {
   const iframe = document.createElement("iframe");
   iframe.id = "acb";
-  iframe.src = location.href + "/aCanvasBlocker";
+  iframe.src = `${location.href}/aCanvasBlocker`;
   document.body.append(iframe);
   HTMLCanvasElement.prototype.toBlob = iframe.contentWindow.HTMLCanvasElement.prototype.toBlob;
   HTMLCanvasElement.prototype.toDataURL = iframe.contentWindow.HTMLCanvasElement.prototype.toDataURL;

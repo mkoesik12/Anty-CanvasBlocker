@@ -28,7 +28,7 @@ const checkCanvasFP = () => {
   const b64Canvas = canvas.toDataURL();
 
   let hash=0;
-  if (strng.length === 0) {
+  if (b64Canvas.length === 0) {
     return 'nothing!';
   };
   for (let i = 0; i < b64Canvas.length; i++) {

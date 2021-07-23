@@ -32,10 +32,10 @@ const checkCanvasFP = () => {
     return 'nothing!';
   };
   for (let i = 0; i < b64Canvas.length; i++) {
-		const char = b64Canvas.charCodeAt(i);
-		hash = ((hash<<5)-hash)+char;
-		hash = hash & hash;
-	};
+    const char = b64Canvas.charCodeAt(i);
+    hash = ((hash<<5)-hash)+char;
+    hash = hash & hash;
+  };
   return hash;
 };
 
